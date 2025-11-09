@@ -1,73 +1,81 @@
-# Welcome to your Lovable project
+🧠 IDS-ML: Intrusion Detection System using Machine Learning
+🚀 Real-time Network Intrusion Detection Dashboard
 
-## Project info
+IDS-ML is a real-time Intrusion Detection System built using FastAPI (backend) and React + Vite (frontend).
+It detects and visualizes live cyber threats using Machine Learning (XGBoost) and WebSocket live updates.
 
-**URL**: https://lovable.dev/projects/9dc511a4-2255-4ded-a938-13a49566573c
+⚙️ How to Run the Project
+🪶 Step 1 — Clone and Open
 
-## How can I edit this code?
+Clone this repository and open it in VS Code.
 
-There are several ways of editing your application.
+🌐 Step 2 — Change Your IP
 
-**Use Lovable**
+Open the .env file and replace the IP with your local IP address:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9dc511a4-2255-4ded-a938-13a49566573c) and start prompting.
+VITE_API_BASE=http://YOUR_IP:8000
+VITE_WS_URL=ws://YOUR_IP:8000/ws/stream
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+Example: 192.168.1.37 → change this part only.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+💻 Step 3 — Run Frontend
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+In the terminal, run:
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Your frontend will start at:
+👉 http://localhost:8080 or http://YOUR_IP:8080
 
-**Use GitHub Codespaces**
+⚙️ Step 4 — Run Backend
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Click the ➕ (plus) icon on the terminal tab to open a new terminal, then run:
 
-## What technologies are used for this project?
+cd backend
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Your backend runs at:
+👉 http://YOUR_IP:8000
+WebSocket stream:
+👉 ws://YOUR_IP:8000/ws/stream
 
-## How can I deploy this project?
+✅ Step 5 — Open in Browser
 
-Simply open [Lovable](https://lovable.dev/projects/9dc511a4-2255-4ded-a938-13a49566573c) and click on Share -> Publish.
+Now open:
+👉 http://YOUR_IP:8080
 
-## Can I connect a custom domain to my Lovable project?
+You’ll see:
 
-Yes, you can!
+📊 Real-time dashboard updates
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🧠 Live intrusion detections
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+⚡ Analysis with charts and metrics
+
+🧠 Tech Stack
+
+Frontend: React + TypeScript + Vite + TailwindCSS + Recharts
+
+Backend: FastAPI + Python + XGBoost
+
+Database: Supabase
+
+👥 Team: The Tech Boys
+
+Prakhar Singh (Leader)
+
+Rohit
+
+Ashish Chouhan
+
+🏆 HackVerse 1.0 Project
+
+Real-time ML-powered intrusion detection and visualization system for modern network security.
+
+📜 License
+
+MIT License © 2025 — The Tech Boys
