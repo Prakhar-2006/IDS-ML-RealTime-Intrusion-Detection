@@ -64,7 +64,7 @@ Backend: FastAPI + Python + XGBoost
 
 Database: Supabase
 
-👥 Team: The Tech Boys
+👥 Team: THE HACKER'S
 
 Prakhar Singh (Leader)
 
@@ -80,4 +80,4 @@ Real-time ML-powered intrusion detection and visualization system for modern net
 
 📜 License
 
-MIT License © 2025 — The Tech Boys
+MIT License © 2025 — THE HACKER'S
