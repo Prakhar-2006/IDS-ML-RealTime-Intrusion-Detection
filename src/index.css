@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 220 26% 6%;
+    --foreground: 180 100% 90%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 26% 6%;
+
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 180 100% 90%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 180 20% 60%;
+
+    --accent: 140 100% 45%;
+    --accent-foreground: 220 26% 6%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 180 100% 90%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.5rem;
+
+    --cyber-glow: 180 100% 50%;
+    --success-glow: 140 100% 45%;
+    --danger-glow: 0 85% 60%;
+    --warning-glow: 40 100% 50%;
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 220 26% 6%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 180 100% 90%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+
+  .dark {
+    --background: 220 26% 6%;
+    --foreground: 180 100% 90%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 220 20% 8%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 220 26% 6%;
+
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 180 100% 90%;
+
+    --muted: 220 15% 15%;
+    --muted-foreground: 180 20% 60%;
+
+    --accent: 140 100% 45%;
+    --accent-foreground: 220 26% 6%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 180 100% 90%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 180 100% 50%;
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 180 100% 90%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 220 26% 6%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 180 100% 90%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
