@@ -72,6 +72,8 @@ Rohit
 
 Ashish Chouhan
 
+Suvathi C
+
 🏆 HackVerse 1.0 Project
 
 Real-time ML-powered intrusion detection and visualization system for modern network security.
